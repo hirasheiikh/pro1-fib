@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n;
+    cin >> n;
+    
+    if (n == 0) cout << 0 << endl;
+    else{
+        while (n > 0){
+            
+            if (n%16 < 10) cout << n%16;
+            else if (n%16 == 10) cout << 'A';
+            else if (n%16 == 11) cout << 'B';
+            else if (n%16 == 12) cout << 'C';
+            else if (n%16 == 13) cout << 'D';
+            else if (n%16 == 14) cout << 'E';
+            else if (n%16 == 15) cout << 'F';
+            
+            n/=16;
+        }
+        cout << endl;
+    }
+}
